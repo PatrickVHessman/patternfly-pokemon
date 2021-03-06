@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=VT323&display=swap");
+
+
+body {
+  overflow: hidden;
+}
+
+.App {
+  
+}
+
+#header {
+  height: 15vh;
+}
+
+#dex {
+  height: 85vh;
+}
+
+#header .pf-c-content a {
+    color: #b8dfff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #54555a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888b8d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Loader CSS */
+.lds-ring {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin: auto;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+  border: 12px solid #555;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #555 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+#header {
+  height: 20vh;
+}
+#dex {
+  height: 80vh;
+}
+body {
+  overflow: auto
+}
+}
